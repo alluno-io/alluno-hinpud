@@ -20,15 +20,15 @@ Windows KMDF driver for Kernel-level input emulation.
 
 | Device Path | Type |
 |---|---|
-| `\\.\AllunoHInpuDKbd` | Keyboard |
-| `\\.\AllunoHInpuDMou` | Mouse |
+| `\\.\KeyboardAllunoHInpuD` | Keyboard |
+| `\\.\MouseAllunoHInpuD` | Mouse |
 
 ### IOCTL Codes
 
 | IOCTL | Value | Description |
 |---|---|---|
-| `IOCTL_ALLUNO_INJECT` (Keyboard) | `CTL_CODE(0x0B, 0x820, 0, 0)` = `0x000B2080` | Inject keyboard input |
-| `IOCTL_ALLUNO_INJECT` (Mouse) | `CTL_CODE(0x0F, 0x820, 0, 0)` = `0x000F2080` | Inject mouse input |
+| `IOCTL_ALLUNO_SEND` (Keyboard) | `CTL_CODE(0x0B, 0x820, 0, 0)` = `0x000B2080` | Send keyboard input |
+| `IOCTL_ALLUNO_SEND` (Mouse) | `CTL_CODE(0x0F, 0x820, 0, 0)` = `0x000F2080` | Send mouse input |
 
 ### Keyboard Input (KEYBOARD_INPUT_DATA, 12 bytes)
 
